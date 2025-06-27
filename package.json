@@ -6,13 +6,16 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "dist/react-blip.css"
   ],
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
-    }
+    },
+    "./dist/react-blip.css": "./dist/react-blip.css"
   },
   "scripts": {
     "dev": "vite",
