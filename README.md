@@ -15,14 +15,12 @@ Using **npm**:
 npm install react-blip
 Or using yarn:
 
-bash
-Copy
-Edit
+
 yarn add react-blip
 🚀 Usage
 jsx
-Copy
-Edit
+
+
 import { SuccessModal, ErrorModal, WarningModal } from "react-blip";
 
 <SuccessModal
