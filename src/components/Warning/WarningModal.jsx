@@ -8,18 +8,7 @@ export function WarningModal({
   open = false,
   tl = "Your action was completed successfully.",
   br = "0px",
-  icon = (
-    <Lottie
-      animationData={WarningIcon}
-      style={{
-        width: "100px",
-        height: "100px",
-        alignSelf: "center",
-        justifySelf: "center",
-      }}
-      loop={false}
-    />
-  ),
+  icon,
   onClose = () => {},
   bt = "Close",
 }) {
@@ -31,6 +20,19 @@ export function WarningModal({
 
   if (!open) return null;
 
+  const defaultIcon = (
+    <Lottie
+      animationData={WarningIcon}
+      style={{
+        width: "100px",
+        height: "100px",
+        alignSelf: "center",
+        justifySelf: "center",
+      }}
+      loop={false}
+    />
+  );
+
   return ReactDOM.createPortal(
     <div className="warning-backdrop" onClick={onClose}>
       <div
@@ -38,7 +40,7 @@ export function WarningModal({
         style={{ borderRadius: br }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="warning-icon">{icon}</div>
+        <div className="warning-icon">{icon || defaultIcon}</div>
         <div className="warning-label">{tl}</div>
         <button className="warning-button" onClick={onClose}>
           {bt}

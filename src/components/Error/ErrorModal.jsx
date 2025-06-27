@@ -8,18 +8,7 @@ export function ErrorModal({
   open = false,
   tl = "Something went wrong while processing your request",
   br = "0px",
-  icon = (
-    <Lottie
-      animationData={ErrorIcon}
-      style={{
-        width: "100px",
-        height: "100px",
-        alignSelf: "center",
-        justifySelf: "center",
-      }}
-      loop={false}
-    />
-  ),
+  icon,
   onClose = () => {},
   bt = "Close",
 }) {
@@ -31,6 +20,19 @@ export function ErrorModal({
 
   if (!open) return null;
 
+  const defaultIcon = (
+    <Lottie
+      animationData={ErrorIcon}
+      style={{
+        width: "100px",
+        height: "100px",
+        alignSelf: "center",
+        justifySelf: "center",
+      }}
+      loop={false}
+    />
+  );
+
   return ReactDOM.createPortal(
     <div className="error-backdrop" onClick={onClose}>
       <div
@@ -38,7 +40,7 @@ export function ErrorModal({
         style={{ borderRadius: br }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="error-icon">{icon}</div>
+        <div className="error-icon">{icon || defaultIcon}</div>
         <div className="error-label">{tl}</div>
         <button className="error-button" onClick={onClose}>
           {bt}

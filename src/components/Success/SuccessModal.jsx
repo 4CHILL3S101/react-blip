@@ -8,18 +8,7 @@ export function SuccessModal({
   open = false,
   tl = "Your action was completed successfully.",
   br = "0px",
-  icon = (
-    <Lottie
-      animationData={SuccessIcon}
-      style={{
-        width: "100px",
-        height: "100px",
-        alignSelf: "center",
-        justifySelf: "center",
-      }}
-      loop={false}
-    />
-  ),
+  icon,
   onClose = () => {},
   bt = "Close",
 }) {
@@ -31,6 +20,19 @@ export function SuccessModal({
 
   if (!open) return null;
 
+  const defaultIcon = (
+    <Lottie
+      animationData={SuccessIcon}
+      style={{
+        width: "100px",
+        height: "100px",
+        alignSelf: "center",
+        justifySelf: "center",
+      }}
+      loop={false}
+    />
+  );
+
   return ReactDOM.createPortal(
     <div className="modal-backdrop" onClick={onClose}>
       <div
@@ -38,7 +40,7 @@ export function SuccessModal({
         style={{ borderRadius: br }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="modal-icon">{icon}</div>
+        <div className="modal-icon">{icon || defaultIcon}</div>
         <div className="modal-label">{tl}</div>
         <button className="modal-button" onClick={onClose}>
           {bt}
