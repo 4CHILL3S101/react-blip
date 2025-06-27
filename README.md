@@ -13,10 +13,19 @@ Using **npm**:
 
 ```bash
 npm install react-blip
+
+
+
+
 Or using yarn:
 
 
 yarn add react-blip
+
+
+
+
+
 🚀 Usage
 jsx
 
