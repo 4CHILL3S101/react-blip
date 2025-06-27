@@ -10,15 +10,6 @@
     "src",
     "dist/react-blip.css"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
-    },
-    "./react-blip.css": {
-      "default": "./dist/react-blip.css"
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
