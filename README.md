@@ -60,9 +60,7 @@ You can import the css in your app entry point ('main or index') so that you don
 
 tl - this is the response message that is being displayed in the modal <br/>
 br - this is the border radius of the container. <br/>
-bt - this stands for button text. the default is "Close" but you can change it as you like. <br/> <br/>
-<br/>
-I hope that this will help you especially those beginners. I am planning to improve this more in the future. Thankyou for your support.
+bt - this stands for button text. the default is "Close" but you can change it as you like. <br/>
 <br/> <br/>
 📄 License <br/>
 MIT © 2025 mrt_dev
@@ -81,7 +79,3 @@ Hi! I'm Mart Ervin, an aspiring developer who enjoys building tools and experime
 If you find this helpful or want to support me, I’d greatly appreciate it!
 <br/> <br/>
 Thanks for checking it out 💚
-
-```
-
-```
