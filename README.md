@@ -14,28 +14,25 @@ Using **npm**:
 ```bash
 npm install react-blip
 
-
-
-
 Or using yarn:
-
 
 yarn add react-blip
 
 
-
-
-
+---
 🚀 Usage
 
 import { SuccessModal, ErrorModal, WarningModal } from "react-blip";
+import "react-blip/dist/react-blip.css";
 
 <SuccessModal
   open={true}
-  tl="Action completed successfully"
-  bt="Close"
+  tl="Action completed successfully" (optional)
+  bt="Close" (optional)
   onClose={() => setOpen(false)}
 />;
+
+--
 You can also use ErrorModal or WarningModal with the same props.
 
 🖼️ Modal Types
