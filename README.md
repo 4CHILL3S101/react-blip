@@ -3,9 +3,15 @@
 **react-blip** is a lightweight and customizable React component library for displaying animated modals: **Success**, **Error**, and **Warning**.  
 Perfect for instant visual feedback in your React app.
 
-![Demo](https://user-images.githubusercontent.com/demo-url/example.gif)
+## Preview
 
----
+## ![Success Modal Sample](https://github.com/4CHILL3S101/react-blip/blob/master/src/assets/success_sample.png)
+
+## Preview
+
+## ![Warning Modal Sample](https://github.com/4CHILL3S101/react-blip/blob/master/src/assets/warning_sample.png)
+
+## ![Error Modal Sample](https://github.com/4CHILL3S101/react-blip/blob/master/src/assets/error_sample.png)
 
 ## 📦 Installation
 
