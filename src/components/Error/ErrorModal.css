@@ -1,0 +1,126 @@
+
+.error-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: backdropFade 0.3s ease-out;
+}
+
+.error-content {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  width: clamp(280px, 90%, 400px);
+  max-height: 90vh;
+  overflow-y: auto;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #fff5f5, #ffe4e4, #fff5f5);
+  background-size: 200% 200%;
+  animation:
+    scaleFadeIn 0.3s ease-out,
+    waveColor 4.2s ease-out forwards infinite;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(255, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+.error-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.error-label {
+  font-size: clamp(0.8rem, 2vw, .9rem);
+  font-weight: 450;
+  color: #040303;
+  margin-bottom: 0.75rem;
+  opacity: 0;
+  margin-left: 10%;
+    margin-right: 10%;
+  transform: translateY(10px);
+  animation: fadeUp 0.4s ease-out 0.3s forwards;
+}
+@media (max-height: 500px) {
+  .error-content {
+    max-height: 80vh;
+    padding: 1rem;
+  }
+
+  .error-message {
+    font-size: 0.9rem;
+  }
+}
+.error-button {
+  padding: 0.75rem 1.25rem;
+  background-color: #e53e3e;
+  border: none;
+  color: #fff;
+  width: 70%;
+  margin-top: 1.25rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transform: scale(0.9);
+  opacity: 0;
+  animation: zoomIn 0.4s ease-out 0.5s forwards;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.error-button:hover {
+  background-color: #c53030;
+  transform: scale(1.02);
+}
+
+@keyframes backdropFade {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes scaleFadeIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes waveColor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
