@@ -27,8 +27,6 @@ yarn add react-blip
 
 
 🚀 Usage
-jsx
-
 
 import { SuccessModal, ErrorModal, WarningModal } from "react-blip";
 
