@@ -80,5 +80,6 @@ Contributions are welcome!
 Feel free to open an issue or submit a pull request.
 
 🌐 Links
-NPM [Repository](https://www.npmjs.com/package/react-blip)
+NPM [Repository]([text](https://www.npmjs.com/package/react-blip))
+GITHUB [Repository]([text](https://github.com/4CHILL3S101/react-blip.git))
 ```
