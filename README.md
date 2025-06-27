@@ -1,12 +1,61 @@
-# React + Vite
+# 🚨 react-blip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**react-blip** is a lightweight and customizable React component library for displaying animated modals: success, error, and warning. Perfect for instant visual feedback in your app.
 
-Currently, two official plugins are available:
+![Demo](https://user-images.githubusercontent.com/demo-url/example.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install react-blip
+```
+
+or with yarn:
+
+yarn add react-blip
+
+USAGE
+
+import { SuccessModal, ErrorModal, WarningModal } from "react-blip";
+
+<SuccessModal
+open={true}
+tl="Action completed successfully"
+bt="Close"
+onClose={() => setOpen(false)}
+/>;
+
+---
+
+import { SuccessModal, ErrorModal, WarningModal } from "react-blip";
+
+<SuccessModal
+open={true}
+tl="Action completed successfully"
+bt="Close"
+onClose={() => setOpen(false)}
+/>;
+
+🖼️ Modal Types
+✅ SuccessModal
+Green button
+
+Success animation
+
+Used for confirming actions
+
+❌ ErrorModal
+Red or pink background gradient
+
+Error icon
+
+Used for error feedback
+
+⚠️ WarningModal
+Yellow/orange tone
+
+Caution icon
+
+Used for alerts, confirmations
