@@ -56,30 +56,30 @@ You can import the css in your app entry point ('main or index') so that you don
 
 ---
 
-# Prop reference # Description
+# Prop reference
 
-tl - this is the response message that is being displayed in the modal
-br - this is the border radius of the container.
-bt - this stands for button text. the default is "Close" but you can change it as you like.
-
+tl - this is the response message that is being displayed in the modal <br/>
+br - this is the border radius of the container. <br/>
+bt - this stands for button text. the default is "Close" but you can change it as you like. <br/> <br/>
+<br/>
 I hope that this will help you especially those beginners. I am planning to improve this more in the future. Thankyou for your support.
-
-📄 License
+<br/> <br/>
+📄 License <br/>
 MIT © 2025 mrt_dev
 
-🙌 Contributions
-Contributions are welcome!
+🙌 Contributions <br/>
+Contributions are welcome! <br/>
 Feel free to open an issue or submit a pull request.
-
-🌐 Links
-NPM - https://www.npmjs.com/package/react-blip
+<br/> <br/> <br/>
+🌐 Links <br/>
+NPM - https://www.npmjs.com/package/react-blip <br/>
 GITHUB - https://github.com/4CHILL3S101/react-blip.git
-
-👋 About the Creator
-Hi! I'm Mart Ervin, an aspiring developer who enjoys building tools and experimenting with ideas. I made this component for my own use, but decided to share it publicly in case it helps someone else — especially beginners.
-
+<br/> <br/>
+👋 About the Creator <br/>
+Hi! I'm Mart Ervin, an aspiring developer who enjoys building tools and experimenting with ideas. <br/> I made this component for my own use, but decided to share it publicly in case it helps someone else — especially beginners.
+<br/> <br/>
 If you find this helpful or want to support me, I’d greatly appreciate it!
-
+<br/> <br/>
 Thanks for checking it out 💚
 
 ```
