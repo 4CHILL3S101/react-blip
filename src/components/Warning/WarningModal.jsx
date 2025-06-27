@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import WarningIcon from "../../assets/warning_animation.json";
 
 export function WarningModal({
-  open = false,
+  open,
   tl = "Your action was completed successfully.",
   br = "0px",
   icon,
@@ -40,7 +40,9 @@ export function WarningModal({
         style={{ borderRadius: br }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="warning-icon">{icon || defaultIcon}</div>
+        <div className="warning-icon">
+          {React.isValidElement(icon) ? icon : defaultIcon}
+        </div>
         <div className="warning-label">{tl}</div>
         <button className="warning-button" onClick={onClose}>
           {bt}

@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import ErrorIcon from "../../assets/error_animation.json";
 
 export function ErrorModal({
-  open = false,
+  open,
   tl = "Something went wrong while processing your request",
   br = "0px",
   icon,
@@ -40,7 +40,9 @@ export function ErrorModal({
         style={{ borderRadius: br }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="error-icon">{icon || defaultIcon}</div>
+        <div className="error-icon">
+          {React.isValidElement(icon) ? icon : defaultIcon}
+        </div>
         <div className="error-label">{tl}</div>
         <button className="error-button" onClick={onClose}>
           {bt}

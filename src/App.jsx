@@ -3,8 +3,8 @@ import { SuccessModal, ErrorModal, WarningModal } from "./components";
 import "./App.css";
 
 function App() {
-  const [successOpen, setSuccessOpen] = useState(true);
-  const [errorOpen, setErrorOpen] = useState(false);
+  const [successOpen, setSuccessOpen] = useState(false);
+  const [errorOpen, setErrorOpen] = useState(true);
   const [warningOpen, setWarningOpen] = useState(false);
 
   return (

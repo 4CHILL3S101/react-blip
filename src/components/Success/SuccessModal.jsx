@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import SuccessIcon from "../../assets/success_animation.json";
 
 export function SuccessModal({
-  open = false,
+  open,
   tl = "Your action was completed successfully.",
   br = "0px",
   icon,
@@ -32,6 +32,8 @@ export function SuccessModal({
       loop={false}
     />
   );
+  console.log("SuccessModal icon prop:", icon);
+  console.log("Default animation object:", SuccessIcon);
 
   return ReactDOM.createPortal(
     <div className="modal-backdrop" onClick={onClose}>
@@ -40,7 +42,10 @@ export function SuccessModal({
         style={{ borderRadius: br }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="modal-icon">{icon || defaultIcon}</div>
+        <div className="modal-icon">
+          {React.isValidElement(icon) ? icon : defaultIcon}
+        </div>
+
         <div className="modal-label">{tl}</div>
         <button className="modal-button" onClick={onClose}>
           {bt}
