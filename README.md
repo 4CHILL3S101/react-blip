@@ -3,6 +3,10 @@
 **react-blip** is a lightweight and customizable React component library for displaying animated modals: **Success**, **Error**, and **Warning**.  
 Perfect for instant visual feedback in your React app.
 
+The component is customizable including the messages, background colors, and including the icons.
+
+These are the samples:
+
 ## Preview
 
 ## ![Success Modal Sample](https://github.com/4CHILL3S101/react-blip/blob/master/src/assets/success_sample.png)
@@ -15,62 +19,50 @@ Perfect for instant visual feedback in your React app.
 
 ## 📦 Installation
 
+Please note that this library is only applicable for react 18.0.0 above.
+
 Using **npm**:
 
 ```bash
 npm install react-blip
+```
 
-Or using yarn:
+Using **yarn**:
 
+```bash
 yarn add react-blip
-
+```
 
 ---
-🚀 Usage
 
-import { SuccessModal, ErrorModal, WarningModal } from "react-blip";
-import "react-blip/dist/react-blip.css";
+## Usage
 
-<SuccessModal
-  open={true}
-  tl="Action completed successfully" (optional)
-  bt="Close" (optional)
-  onClose={() => setOpen(false)}
-/>;
+You can import the css in your app entry point ('main or index') so that you don't need to import it on every file.
 
---
-You can also use ErrorModal or WarningModal with the same props.
+# Sample code implementation:
 
-🖼️ Modal Types
-✅ SuccessModal
-Green confirmation button
+      import React,{useState} from "react"
+      import {SuccessModal,WarningModal,ErrorModal} from "react-blip" //These are the imports
 
-Animated success icon
+      export default function MyHomepage(){
+      const [response,SetResponse] = useState(false);
+      const [message,setResponseMessage] = useState('');
 
-Used for confirming successful actions
+      return(
+      <SuccessModal open={loading}/>
+      {/_ Please note that only the "open" prop is required. If you do not specify the other props it will automatically use the default template._/}
+      )
+      }
 
-❌ ErrorModal
-Red/pink background gradient
+---
 
-Animated error icon
+# Prop reference # Description
 
-Used for error or failure feedback
+tl - this is the response message that is being displayed in the modal
+br - this is the border radius of the container.
+bt - this stands for button text. the default is "Close" but you can change it as you like.
 
-⚠️ WarningModal
-Yellow/orange tone
-
-Animated warning icon
-
-Used for alerts, prompts, or confirmations
-
-🔧 Props
-Prop	Type	Description
-open	boolean	Controls whether the modal is visible
-tl	string	Title or label text
-bt	string	Button text (e.g., "Close")
-br	string	Optional border radius (e.g., "12px")
-icon	JSX	Optional custom JSX or Lottie icon
-onClose	function	Callback function when modal is closed
+I hope that this will help you especially those beginners. I am planning to improve this more in the future. Thankyou for your support.
 
 📄 License
 MIT © 2025 mrt_dev
@@ -80,16 +72,16 @@ Contributions are welcome!
 Feel free to open an issue or submit a pull request.
 
 🌐 Links
-NPM [Repository]([text](https://www.npmjs.com/package/react-blip))
-GITHUB [Repository]([text](https://github.com/4CHILL3S101/react-blip.git))
+NPM - https://www.npmjs.com/package/react-blip
+GITHUB - https://github.com/4CHILL3S101/react-blip.git
 
+👋 About the Creator
+Hi! I'm Mart Ervin, an aspiring developer who enjoys building tools and experimenting with ideas. I made this component for my own use, but decided to share it publicly in case it helps someone else — especially beginners.
 
-💬 About the Creator
-Hi! I'm Mrt Ervn, an aspiring full-stack develope.
-I also build Android apps and experiment with IoT tech!
+If you find this helpful or want to support me, I’d greatly appreciate it!
 
-💻 Currently building tools that make interfaces better — one component at a time.
-🧠 Interests: UI/UX design, React ecosystem,  and animated feedback systems.
-☕ Help me get a personal computer so I can keep coding — [Buy Me a Coffee!](https://www.buymeacoffee.com/mrt_dev)
+Thanks for checking it out 💚
+
+```
 
 ```
