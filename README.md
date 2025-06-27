@@ -82,4 +82,14 @@ Feel free to open an issue or submit a pull request.
 🌐 Links
 NPM [Repository]([text](https://www.npmjs.com/package/react-blip))
 GITHUB [Repository]([text](https://github.com/4CHILL3S101/react-blip.git))
+
+
+💬 About the Creator
+Hi! I'm Mrt Ervn, an aspiring full-stack develope.
+I also build Android apps and experiment with IoT tech!
+
+💻 Currently building tools that make interfaces better — one component at a time.
+🧠 Interests: UI/UX design, React ecosystem,  and animated feedback systems.
+☕ Help me get a personal computer so I can keep coding — [Buy Me a Coffee!](https://www.buymeacoffee.com/mrt_dev)
+
 ```
