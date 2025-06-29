@@ -32,22 +32,20 @@ export function SuccessModal({
       loop={false}
     />
   );
-  console.log("SuccessModal icon prop:", icon);
-  console.log("Default animation object:", SuccessIcon);
 
   return ReactDOM.createPortal(
-    <div className="modal-backdrop" onClick={onClose}>
+    <div className="dnaliwuhaiuhwdi-backdrop" onClick={onClose}>
       <div
-        className="modal-content"
+        className="success-dwo87aw8dbuawdyuabwduya"
         style={{ borderRadius: br }}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="modal-icon">
+        <div className="success-dnauawawdgawudbawydv">
           {React.isValidElement(icon) ? icon : defaultIcon}
         </div>
 
-        <div className="modal-label">{tl}</div>
-        <button className="modal-button" onClick={onClose}>
+        <div className="success-dnawinawd98awd9abinwdoa98wdg">{tl}</div>
+        <button className="success-dnwoauwho98" onClick={onClose}>
           {bt}
         </button>
       </div>

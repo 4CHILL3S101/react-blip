@@ -1,5 +1,5 @@
 
-.modal-backdrop {
+.dnaliwuhaiuhwdi-backdrop {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
@@ -18,7 +18,7 @@
   
 }
 
-.modal-content {
+.success-dwo87aw8dbuawdyuabwduya {
   padding: 2rem 1.5rem;
   text-align: center;
   width: clamp(280px, 90%, 400px);
@@ -47,12 +47,12 @@
 }
 
 
-.modal-icon {
+.success-dnauawawdgawudbawydv {
   font-size: 2.5rem;
   margin-bottom: 1.2rem;
 }
 
-.modal-label {
+.success-dnawinawd98awd9abinwdoa98wdg {
   font-size: clamp(.9rem, 2vw, 1rem); 
   font-weight: 450;
   color: #222;
@@ -62,7 +62,7 @@
   animation: fadeUp 0.4s ease-out 0.3s forwards;
 }
 
-.modal-button {
+.success-dnwoauwho98 {
   padding: 0.75rem 1.25rem;
   background-color: #00c885;
   border: none;
@@ -79,7 +79,7 @@
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.modal-button:hover {
+.success-dnwoauwho98:hover {
   background-color: #04bb7e;
   transform: scale(1.02);
 }
